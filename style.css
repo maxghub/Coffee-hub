@@ -1,0 +1,113 @@
+div .order button{
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #C7A17A;
+    padding: 9.5px 34px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #C7A17A;
+    font-weight: 500; 
+}
+nav div div div ul li a{
+    text-transform: uppercase;
+}
+ section nav .container #main_nav ul li a{
+    display: block;
+    font-size: 15px;
+    font-weight: bolder;
+    position: relative;
+    text-transform: uppercase;
+    line-height: 22px;
+ }
+ section nav .container #main_nav ul li a:hover{
+    display: block;
+    letter-spacing: 1px;
+    color: #C7A17A;
+    
+    position: relative;
+    text-transform: uppercase;
+    line-height: 22px;
+ }
+ 
+
+section .container .row div div h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+section .container .row div div p{
+    font-family: sans-serif;
+   
+    position: relative; 
+}
+
+ section .container .row div div .part p:before {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    background: #c4c4e0;
+    left: 100%;
+    top: 40%;
+    position: absolute;
+  }
+ 
+  section .container .row div div .part p:after {
+    content: "";
+    display: block;
+    width: 170px;
+    height: 2px;
+    background: #c4c4e0;
+    left: 130%;
+    top: 40%;
+    position: absolute;
+  }
+  section .container .row div .part-5{
+    padding-top: 10%;
+  }
+section .container div .speacial-menu  button{
+    
+    background-color: #C7A17A;
+}
+  section .container .row div .part-5 div button{
+    background: #C7A17A;
+    height: 25px;
+    width: 100px;
+    
+  }
+
+footer .container .row div{
+    justify-content: space-between;
+}
+.no-border {
+    border: 0;
+    box-shadow: none; 
+   
+}
+.no-border:hover{
+    border: 0; 
+    box-shadow: none;
+}
+button .subs1:hover{
+    border: 0; 
+    box-shadow: none; 
+}
+footer .container .row{
+    padding-top: 7%;
+}
+
+
+
+
+/* contact us */
+
+.contact-us-1 .container{
+    /* width: 100%; */
+   
+    /* background-color: rgb(30, 120, 199);
+    box-shadow: 40px ; */
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+}

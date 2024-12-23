@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/addtocart/style.css">
+  <link rel="stylesheet" href="./addtocart/style.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <div class="nav">
+
+      <a href="home.html" class="logo" style="color: white; " id="logo">
+        <img src="image/logo.png" alt="" class="img-fluid bg-light" style="max-width: 3%;" style="background-color: white; color: white;" >
+         Brewhaha
+      </a>
+
+      <div class="box">
+        <div class="cart-count">0</div>
+        <ion-icon name="cart"  id="cart-icon" ></ion-icon>
+      </div>
+
+      <div class="cart">
+        <div class="cart-title">Cart Items</div>
+        <div class="cart-content">
+<!--
+          <div class="cart-box">
+            <img src="images/97.jpg" class="cart-img">
+            <div class="detail-box">
+              <div class="cart-food-title">Special Dosai</div>
+              <div class="price-box">
+                <div class="cart-price">Rs.72</div>
+                 <div class="cart-amt">Rs.72</div>
+             </div>
+              <input type="number" value="1" class="cart-quantity">
+            </div>
+            <ion-icon name="trash" class="cart-remove"></ion-icon>
+          </div>
+
+          <div class="cart-box">
+            <img src="images/97.jpg" class="cart-img">
+            <div class="detail-box">
+              <div class="cart-food-title">Special Dosai</div>
+              <div class="price-box">
+                <div class="cart-price">Rs.72</div>
+                 <div class="cart-amt">Rs.72</div>
+             </div>
+              <input type="number" value="1" class="cart-quantity">
+            </div>
+            <ion-icon name="trash" class="cart-remove"></ion-icon>
+          </div>
+        -->
+        </div>
+        
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">Rs.0</div>
+      </div>
+       <a href="beforecheckoutform.html">
+      <button class="btn-buy" onclick="hello()">Place Order</button>
+    </a>
+      <!-- <script>
+        const cartItems=document.querySelectorAll('.cart-box');
+  const totalValue=document.querySelector('.total-price');
+
+  let total=0;
+
+  cartItems.forEach(product=>{
+    let priceElement=product.querySelector('.cart-price');
+    let price=parseFloat(priceElement.innerHTML.replace("Rs.",""));
+    let qty=product.querySelector('.cart-quantity').value;
+    total+=(price*qty);
+    product.querySelector('.cart-amt').innerText="Rs."+(price*qty);
+
+  });
+
+  totalValue.innerHTML='Rs.'+total;
+        if(total!=0){
+        function hello() {
+         console.log(total)
+         console.log("clicled")
+          window.location.href("index.html")
+        }
+      }
+        </script> -->
+
+      <ion-icon name="close" id="cart-close"></ion-icon>
+
+      </div>
+    </div>
+  </header>
+  
+  <div class="container">
+    <h2 class="title">Discover the Best Food</h2>
+    <h2 id="Most-popular" class="text-white title">Most popular</h2>
+    <div class="shop-content" style="padding-bottom: 40px;">
+
+
+      <div class="food-box">
+     
+        <div class="pic">
+          <img src="image/ep1.jpeg" class="food-img">
+        </div>
+        <h2 class="food-title">Matcha</h2>
+        <span class="food-price">Rs.40</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+
+
+      <div class="food-box">
+        <div class="pic"><img src="image/ep2.webp" class="food-img"></div>
+        <h2 class="food-title">Cappuccino</h2>
+        <span class="food-price">Rs.205</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="image/ep3.webp" class="food-img"></div>
+        <h2 class="food-title">Lemonade</h2>
+        <span class="food-price">Rs.120</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="image/ep4.webp" class="food-img"></div>
+        <h2 class="food-title">Curious George</h2>
+        <span class="food-price">Rs.315</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+  
+
+    </div>
+    <h2 id="Coffee" class="title">Coffee</h2>
+        <div class="shop-content" style="padding-bottom: 40px;">
+
+
+      <div class="food-box">
+     
+        <div class="pic">
+          <img src="image/c11.jpeg" class="food-img">
+        </div>
+        <h2 class="food-title">Americano</h2>
+        <span class="food-price">Rs.300</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+
+
+      <div class="food-box">
+        <div class="pic"><img src="image/c12.jpeg" class="food-img"></div>
+        <h2 class="food-title">Black Eye</h2>
+        <span class="food-price">Rs.205</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="image/c12.jpeg" class="food-img"></div>
+        <h2 class="food-title">Cafe au lait</h2>
+        <span class="food-price">Rs.140</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="image/c14.jpeg" class="food-img"></div>
+        <h2 class="food-title">Cold Brew</h2>
+        <span class="food-price">Rs.115</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+      <div class="food-box">
+        <div class="pic"><img src="image/c15.webp" class="food-img"></div>
+        <h2 class="food-title">Cortado</h2>
+        <span class="food-price">Rs.152</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+      <div class="food-box">
+        <div class="pic"><img src="image/c16.jpeg" class="food-img"></div>
+        <h2 class="food-title">Drip</h2>
+        <span class="food-price">Rs.55</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+      <div class="food-box">
+        <div class="pic"><img src="image/c17.webp" class="food-img"></div>
+        <h2 class="food-title">Double Espresso</h2>
+        <span class="food-price">Rs.215</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+      <div class="food-box">
+        <div class="pic"><img src="image/c18.jpeg" class="food-img"></div>
+        <h2 class="food-title">Espresso Tonic</h2>
+        <span class="food-price">Rs.125</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+     
+
+    </div>
+    <h2 id="Most-popular" class="text-white title">Tea</h2>
+    <div class="shop-content" style="padding-bottom: 40px;">
+
+
+      <div class="food-box">
+     
+        <div class="pic">
+          <img src="image/t1.jpeg" class="food-img">
+        </div>
+        <h2 class="food-title">Hibiscus Lemon Drop</h2>
+        <span class="food-price">Rs.51</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+
+
+      <div class="food-box">
+        <div class="pic"><img src="image/t2.jpeg" class="food-img"></div>
+        <h2 class="food-title">Hot Tea</h2>
+        <span class="food-price">Rs.91</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="image/t3.jpeg" class="food-img"></div>
+        <h2 class="food-title">Iced Tea</h2>
+        <span class="food-price">Rs.99</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+      <div class="food-box">
+        <div class="pic"><img src="image/c14.jpeg" class="food-img"></div>
+        <h2 class="food-title">Hot Tea</h2>
+        <span class="food-price">Rs.99</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+      
+  </div>
+ 
+    <h2 id="Most-popular" class="text-white title">Non-Coffee</h2>
+    <div class="shop-content" style="padding-bottom: 40px;">
+
+
+      <div class="food-box">
+     
+        <div class="pic">
+          <img src="image/nc1.jpeg" class="food-img">
+        </div>
+        <h2 class="food-title">Bottled Water</h2>
+        <span class="food-price">Rs.148</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+
+
+      <div class="food-box">
+        <div class="pic"><img src="image/nc2.webp" class="food-img"></div>
+        <h2 class="food-title">Lemonade</h2>
+        <span class="food-price">Rs.189</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="image/nc3.jpeg" class="food-img"></div>
+        <h2 class="food-title">Frappe</h2>
+        <span class="food-price">Rs.129</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="image/nc4.jpeg" class="food-img"></div>
+        <h2 class="food-title">Hot Chocolate</h2>
+        <span class="food-price">Rs.99</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+      <div class="food-box">
+        <div class="pic"><img src="image/nc5.png" class="food-img"></div>
+        <h2 class="food-title">Italian Cream Soda</h2>
+        <span class="food-price">Rs.149</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+      <div class="food-box">
+        <div class="pic"><img src="image/nc6.jpeg" class="food-img"></div>
+        <h2 class="food-title">Curious George</h2>
+        <span class="food-price">Rs.199</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+      <div class="food-box">
+        <div class="pic"><img src="image/nc7.jpeg" class="food-img"></div>
+        <h2 class="food-title">Italian Sodae</h2>
+        <span class="food-price">Rs.249</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+      <div class="food-box">
+        <div class="pic"><img src="image/nc8.jpeg" class="food-img"></div>
+        <h2 class="food-title">Smoothie</h2>
+        <span class="food-price">Rs.149</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+  
+
+   
+    
+
+    </div>
+   
+    <h2 id="Most-popular" class="text-white title">Burritos</h2>
+    <div class="shop-content" style="padding-bottom: 40px;">
+
+
+      <div class="food-box">
+     
+        <div class="pic">
+          <img src="image/b1.jpeg" class="food-img">
+        </div>
+        <h2 class="food-title">Sausage Breakfast Burrito</h2>
+        <span class="food-price">Rs.299</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+
+
+      <div class="food-box">
+        <div class="pic"><img src="image/b2.jpeg" class="food-img"></div>
+        <h2 class="food-title">Sweet Potato Chorizo Burrito</h2>
+        <span class="food-price">Rs.399</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="image/b3.jpeg" class="food-img"></div>
+        <h2 class="food-title">Chicken Chipotle Burrito</h2>
+        <span class="food-price">Rs.249</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="image/b4.jpeg" class="food-img"></div>
+        <h2 class="food-title">Veggie Breakfast Burrito</h2>
+        <span class="food-price">Rs.399</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+  
+
+    </div>
+
+    
+    <h2 id="Most-popular" class="text-white title">Crepes</h2>
+    <div class="shop-content" style="padding-bottom: 40px;">
+
+
+      <div class="food-box">
+     
+        <div class="pic">
+          <img src="image/cr1.jpeg" class="food-img">
+        </div>
+        <h2 class="food-title">Curious George</h2>
+        <span class="food-price">Rs.299</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+
+
+      <div class="food-box">
+        <div class="pic"><img src="image/cr2.jpeg" class="food-img"></div>
+        <h2 class="food-title">The Great Gatsby</h2>
+        <span class="food-price">Rs.149</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="image/cr3.jpeg" class="food-img"></div>
+        <h2 class="food-title">The Farmer Boy</h2>
+        <span class="food-price">Rs.199</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="image/cr4.jpeg" class="food-img"></div>
+        <h2 class="food-title">CThe Secret Garden</h2>
+        <span class="food-price">Rs.499</span>
+        <ion-icon name="cart" class="add-cart" onclick="myFunction()"></ion-icon>
+      </div>
+  
+
+    </div>
+  </div>
+  <!-- <div style="border: 2px solid white;">
+    
+  </div> -->
+<footer style="padding: 20px 20px;background: purple;">
+
+    <p style="color: white; text-align: center;">© 2023 Brew HAHA. All rights reserved.</p>
+</footer>
+
+
+  <script src="./addtocart/script.js"></script>
+  <script>
+    function myFunction() {
+      alert("Thank you for adding this product the cart!");
+    }
+    </script>
+</body>
+</html>
